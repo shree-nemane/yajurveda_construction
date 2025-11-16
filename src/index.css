@@ -21,6 +21,11 @@
 }
 
 @font-face {
+    font-family: PoppinsBold;
+    src: url(../public/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
     font-family: PoppinsSbold;
     src: url(../public/fonts/Poppins/Poppins-SemiBold.ttf);
 }
@@ -28,4 +33,28 @@
 @font-face {
     font-family: PoppinsLight;
     src: url(../public/fonts/Poppins/Poppins-Light.ttf);
+}
+
+
+/* In your global CSS file (e.g., src/index.css or src/App.css) */
+
+.animated-underline {
+  position: relative;
+  display: inline-block; /* Ensure it wraps the text */
+  text-decoration: none; /* Remove default underline */
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px; /* Underline thickness */
+  background: currentColor; /* Matches text color */
+  left: 0;
+  bottom: -2px; /* Position it below the text */
+  transition: width 0.3s ease-out; /* Animation speed */
+}
+
+.animated-underline:hover::after {
+  width: 100%; /* Expands to full width on hover */
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../assets/Header/Logo.png";
+import Logo from "../../assets/Common/Logo.png";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -31,7 +31,7 @@ function Header() {
           <a className="mx-4 hover:text-[#253672]" href="#">Home</a>
           <a className="mx-4 hover:text-[#253672]" href="#">About</a>
           <a className="mx-4 hover:text-[#253672]" href="#">Projects</a>
-          <a className="mx-4 hover:text-[#253672]" href="#">Contact</a>
+          <a className="mx-4 hover:text-[#253672]" href="#">Services</a>
         </nav>
 
         {/* Desktop Button */}

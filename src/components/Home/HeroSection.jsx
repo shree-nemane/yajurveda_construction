@@ -59,6 +59,9 @@ const HeroSection = () => {
             <div className="flex justify-center lg:justify-end">
               <button
                 className="
+                  lg:absolute
+                  bottom-0
+                  xl:bottom-12
                   px-10 py-3 text-xl font-[PoppinsElight]
                   bg-white/10 
                   border-2 border-white 

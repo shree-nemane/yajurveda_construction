@@ -5,6 +5,7 @@ import AboutUsAndServices from '../components/Home/AboutUsAndServices'
 import ProjectsHero from '../components/Home/ProjectsHero'
 import ClientFeedback from '../components/Home/ClientFeedback'
 import ContactForm from '../components/Home/ContactForm'
+import Footer from '../components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <ProjectsHero />
         <ClientFeedback />
         <ContactForm />
+        <Footer />
     </>
   )
 }
