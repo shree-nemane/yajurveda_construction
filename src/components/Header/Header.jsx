@@ -15,7 +15,7 @@ function Header() {
         rounded-full
         mt-6
       ">
-        
+
         {/* Logo */}
         <div>
           <img className="w-24" src={Logo} alt="logo" />
@@ -48,25 +48,25 @@ function Header() {
 
         {/* Mobile Menu Button */}
         <button
-  onClick={() => setOpen(!open)}
-  className="relative w-8 h-8 md:hidden flex flex-col justify-center items-center"
->
-  {/* Top bar */}
-  <span
-    className={`
+          onClick={() => setOpen(!open)}
+          className="relative w-8 h-8 md:hidden flex flex-col justify-center items-center"
+        >
+          {/* Top bar */}
+          <span
+            className={`
       bg-[#253672] h-[3px] w-7 rounded-full absolute transition-all duration-300
       ${open ? "rotate-45" : "-translate-y-1"}
     `}
-  ></span>
+          ></span>
 
-  {/* Bottom bar */}
-  <span
-    className={`
+          {/* Bottom bar */}
+          <span
+            className={`
       bg-[#253672] h-[3px] w-7 rounded-full absolute transition-all duration-300
       ${open ? "-rotate-45" : "translate-y-1"}
     `}
-  ></span>
-</button>
+          ></span>
+        </button>
 
       </div>
 

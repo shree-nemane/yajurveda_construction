@@ -39,7 +39,7 @@ const ClientFeedback = () => {
   return (
     <div
       className="w-full min-h-[80vh] py-16 sm:py-20 px-4 sm:px-8 lg:px-16 text-white bg-[#4666D8]"
-      // style={gradientStyle}
+    // style={gradientStyle}
     >
       <div className="max-w-7xl mx-auto">
 
@@ -51,7 +51,7 @@ const ClientFeedback = () => {
           </h2>
 
           <button
-    className="
+            className="
         px-6 py-3 
         border border-white/70 
         rounded-full 
@@ -61,9 +61,9 @@ const ClientFeedback = () => {
         hover:bg-white/20 
         transition 
     "
->
-    Testimonials
-</button>
+          >
+            Testimonials
+          </button>
         </div>
 
         {/* GRID */}

@@ -68,19 +68,27 @@ const Footer = () => {
 
                         {/* SOCIAL ICONS */}
                         <div className="flex space-x-5 text-2xl">
-                            <a href="#" className="flex justify-center items-center cursor-pointer hover:text-[#1e2c8b] transition">
+                            <a href="#" className="flex justify-center items-center cursor-pointer 
+                            transition-transform duration-300 hover:-translate-y-1">
                                 <img className="w-8 object-contain" src={instagramIcon} alt="" />
                             </a>
-                            <a href="#" className="flex justify-center items-center cursor-pointer hover:text-[#1e2c8b] transition">
+
+                            <a href="#" className="flex justify-center items-center cursor-pointer 
+                            transition-transform duration-300 hover:-translate-y-1">
                                 <img className="w-8 object-contain" src={facebookIcon} alt="" />
                             </a>
-                            <a href="#" className="flex justify-center items-center cursor-pointer hover:text-[#1e2c8b] transition">
+
+                            <a href="#" className="flex justify-center items-center cursor-pointer 
+                            transition-transform duration-300 hover:-translate-y-1">
                                 <img className="w-8 object-contain" src={whatsappIcon} alt="" />
                             </a>
-                            <a href="#" className="flex justify-center items-center cursor-pointer hover:text-[#1e2c8b] transition">
+
+                            <a href="#" className="flex justify-center items-center cursor-pointer 
+                            transition-transform duration-300 hover:-translate-y-1">
                                 <img className="w-9 object-contain" src={gmailIcon} alt="" />
                             </a>
                         </div>
+
 
                     </div>
 
@@ -127,11 +135,10 @@ const Footer = () => {
                 {/* ---- BOTTOM SECTION ---- */}
                 <div className="mt-8 pt-8 gap-6 md:gap-0 flex flex-col sm:flex-row items-center sm:items-start justify-between border-t border-gray-300 gap-6">
                     <p className="
-            text-sm sm:text-base 
-            text-gray-600 font-[PoppinsRegular] 
-            text-center sm:text-left
-
-          "
+                        text-sm sm:text-base 
+                        text-gray-600 font-[PoppinsRegular] 
+                        text-center sm:text-left
+                    "
                     >
                         © 2025 YAJURVEDA CONSTRUCTION PVT LTD.
                         <br /> All Rights Reserved.
