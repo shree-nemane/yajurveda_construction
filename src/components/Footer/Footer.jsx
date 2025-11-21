@@ -71,7 +71,7 @@ const Footer = () => {
                                 <img className="w-8 object-contain" src={whatsappIcon} alt="WhatsApp" />
                             </a>
 
-                            <a href="#" className="flex justify-center items-center cursor-pointer 
+                            <a href="mailto:contact@yajurved" className="flex justify-center items-center cursor-pointer 
                             transition-transform duration-300 hover:-translate-y-1">
                                 <img className="w-9 object-contain" src={gmailIcon} alt="Gmail" />
                             </a>
@@ -104,6 +104,11 @@ const Footer = () => {
                         <p className="font-[PoppinsSbold] mb-1">{t('footer.callUsLabel')}</p>
                         <p className="text-lg font-[PoppinsRegular] mb-4">
                             {t('footer.phoneNumber')}
+                        </p>
+
+                        <p className="font-[PoppinsSbold] mb-1">{t('footer.emailUsLabel')}</p>
+                        <p className="text-lg font-[PoppinsRegular] mb-4">
+                            {t('footer.emailAddress')}
                         </p>
 
                         <p className="font-[PoppinsSbold] mb-1">{t('footer.addressLabel')}</p>

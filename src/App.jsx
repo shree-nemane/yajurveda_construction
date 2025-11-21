@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Home from './pages/Home'
+import HomePage from './pages/HomePage'
 import PopupForm from "./components/Form/PopupForm";
 
 const App = () => {
@@ -7,13 +7,33 @@ const App = () => {
   const [showModal, setShowModal] = useState(true);
 
   useEffect(() => {
-    try {
-      const filled = localStorage.getItem("formFilled");
-      if (filled === "1") setShowModal(false);
-    } catch (err) {
-      // ignore localStorage errors
+    // 1. ENVIRONMENT CHECK: Ensure code runs only on the client (browser)
+    // This is crucial for Server-Side Rendering (SSR) environments like Next.js or Gatsby
+    if (typeof window === 'undefined') {
+      return;
     }
-  }, []);
+
+    try {
+      // 2. ERROR HANDLING: Check for localStorage accessibility
+      // Some browsers (e.g., Safari in private mode) or security policies 
+      // block localStorage access, throwing a SecurityError.
+      const storage = window.localStorage;
+      
+      const filled = storage.getItem("formFilled");
+      
+      // 3. STRICT CHECK: Compare against the exact string value
+      if (filled === "1") {
+        setShowModal(false);
+      }
+    } catch (err) {
+      // 4. ROBUST ERROR HANDLING: Log the error and fail gracefully
+      // Instead of just ignoring it, log it to your monitoring system (Sentry, console) 
+      // while still preventing the app from crashing.
+      console.error("Error accessing localStorage:", err);
+      // In a production app, you might want a specific action here, 
+      // but usually, falling back to the default state (showing the modal) is safest.
+    }
+  }, [setShowModal]); // 5. Dependency Array: Include external dependencies
 
   const handleClose = () => {
     setShowModal(false);
@@ -24,7 +44,7 @@ const App = () => {
       <div className='overflow-x-hidden'>
         {/* Main content always renders behind modal */}
         <main>
-          <Home />
+          <HomePage />
           {/* other main site components */}
         </main>
 

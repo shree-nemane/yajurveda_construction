@@ -7,12 +7,12 @@ const HeroSection = () => {
   const { t } = useTranslation('home-hero');
 
   return (
-    <div id="hero-section"
+    <section id="hero-section"
       className="
         relative min-h-screen text-white 
         flex flex-col items-center justify-start
         px-4 sm:px-8 lg:px-16 
-        pt-36 sm:pt-40 md:pt-44 lg:pt-28 
+        pt-36 sm:pt-40 md:pt-36 lg:pt-28 
         pb-6
         overflow-hidden
       "
@@ -28,7 +28,7 @@ const HeroSection = () => {
 
         <div className="flex flex-col justify-center">
 
-          <p className="text-sm md:text-lg  font-[PoppinsItalic] text-center lg:text-left opacity-80 mb-3">
+          <p className="text-sm md:text-lg font-[PoppinsItalic] text-center lg:text-left opacity-80 mb-3">
             {t('tagline')}
           </p>
 
@@ -36,7 +36,7 @@ const HeroSection = () => {
             <div className=" my-4  ">
               <h1
                 className="
-                text-4xl sm:text-6xl lg:text-7xl 
+                text-4xl md:text-6xl lg:text-7xl 
                 py-4 px-8 sm:px-12 lg:px-10
                 leading-snug mb-6
                 font-[PoppinsElight]
@@ -56,6 +56,8 @@ const HeroSection = () => {
                 className="
                   lg:absolute
                   bottom-0
+                  lg:-right-10
+                  xl:right-0
                   xl:bottom-12
                   px-10 py-3 text-xl font-[PoppinsElight]
                   bg-white/10 
@@ -114,10 +116,10 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <p className="z-10 text-sm font-[PoppinsMedium] text-center ">
+      <p className="z-10 text-sm font-[PoppinsMedium] text-center mt-6 xl:mt-0">
         {t('footerName')}
       </p>
-    </div>
+    </section>
   );
 };
 

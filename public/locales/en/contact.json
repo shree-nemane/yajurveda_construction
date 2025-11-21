@@ -9,10 +9,15 @@
     "placeholderPhone": "Phone Number",
     "placeholderEmail": "Email Address",
     "dropdownEnquiries": "Enquiries",
-    "optionSales": "Sales",
-    "optionSupport": "Support",
-    "optionOther": "Other",
+    "optionSales": "Real Estate Development",
+    "optionSupport": "Litigation Property",
+    "optionOther": "Construction Management",
     "tagline": "Let's turn plans into possibilities",
-    "submitButton": "Submit"
+    "submitButton": "Submit",
+
+    "successTitle": "Message Sent Successfully!",
+    "successMessage": "Thank you for reaching out. We’ll get back to you shortly.",
+    "errorTitle": "Something Went Wrong!",
+    "errorMessage": "Please try again or contact us directly."
   }
 }

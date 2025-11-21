@@ -22,7 +22,7 @@ const AboutUsAndServices = () => {
   const linkItems = t('aboutSection.listItems', { returnObjects: true });
 
   return (
-    <div id='about' className="relative min-h-screen bg-[#f0f2f5] text-gray-800 overflow-hidden pb-20">
+    <section id='about' className="relative min-h-screen bg-[#f0f2f5] text-gray-800 overflow-hidden pb-20">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10 z-0"
         style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -161,7 +161,7 @@ const AboutUsAndServices = () => {
           />
         </svg>
       </div>
-    </div>
+    </section>
   );
 };
 
