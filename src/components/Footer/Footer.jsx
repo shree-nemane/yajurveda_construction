@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'; 
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import logo from "../../assets/Common/Logo_icon.png";
 import instagramIcon from "../../assets/Common/instagram.png";
 import facebookIcon from "../../assets/Common/facebook.png";
@@ -32,7 +32,7 @@ const Footer = () => {
 
     return (
         <footer
-            className="w-full py-16 px-6 sm:px-10 lg:px-20 font-sans"
+            className="w-full py-16 px-6 sm:px-10 lg:px-20 font-sans bg-white"
             style={{ color: darkTextColor }}
         >
             <div className="max-w-7xl mx-auto">
@@ -76,7 +76,7 @@ const Footer = () => {
                                 <img className="w-9 object-contain" src={gmailIcon} alt="Gmail" />
                             </a>
                         </div>
-                        
+
                         <div className="mt-4 pt-4">
                             <LanguageSwitcher />
                         </div>
@@ -102,14 +102,22 @@ const Footer = () => {
                         </h4>
 
                         <p className="font-[PoppinsSbold] mb-1">{t('footer.callUsLabel')}</p>
-                        <p className="text-lg font-[PoppinsRegular] mb-4">
+                        <a
+                            href={`tel:${t('footer.phoneNumber')}`}
+                            className="block text-lg font-[PoppinsRegular] mb-4 animated-underline cursor-pointer"
+                        >
                             {t('footer.phoneNumber')}
-                        </p>
+                        </a>
+
 
                         <p className="font-[PoppinsSbold] mb-1">{t('footer.emailUsLabel')}</p>
-                        <p className="text-lg font-[PoppinsRegular] mb-4">
+                        <a
+                            href={`mailto:${t('footer.emailAddress')}`}
+                            className="block text-lg font-[PoppinsRegular] mb-4 animated-underline cursor-pointer"
+                        >
                             {t('footer.emailAddress')}
-                        </p>
+                        </a>
+
 
                         <p className="font-[PoppinsSbold] mb-1">{t('footer.addressLabel')}</p>
                         <p className="text-lg font-[PoppinsRegular] mb-4 leading-snug">
@@ -124,7 +132,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="mt-8 pt-8 gap-6 md:gap-0 flex flex-col sm:flex-row items-center sm:items-start justify-between border-t border-gray-300 gap-6">
+                <div className="mt-8 pt-8 gap-6 md:gap-0 flex flex-col sm:flex-row items-center sm:items-start justify-between border-t border-gray-300">
                     <p className="
                         text-sm sm:text-base 
                         text-gray-600 font-[PoppinsRegular] 
@@ -132,7 +140,7 @@ const Footer = () => {
                     "
                     >
                         {t('footer.copyright')}
-                        <br /> 
+                        <br />
                         {t('footer.allRights')}
                     </p>
 

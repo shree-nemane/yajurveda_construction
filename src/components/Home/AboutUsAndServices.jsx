@@ -4,6 +4,7 @@ import backgroundImage from "../../assets/Home/About/About_bg.jpg";
 import realEstateImage from "../../assets/Home/About/real_estate.jpg";
 import litigationImage from "../../assets/Home/About/litigation.jpg";
 import constructionImage from "../../assets/Home/About/construction.jpg";
+import { Link } from "react-router";
 
 const AboutUsAndServices = () => {
   const { t } = useTranslation('about');
@@ -63,7 +64,7 @@ const AboutUsAndServices = () => {
 
         <div className="flex justify-end ">
           <div className="flex ">
-            <button
+            <Link to="/about"
               className="
               group
               px-8 py-2 mt-6 lg:mt-0
@@ -103,7 +104,7 @@ const AboutUsAndServices = () => {
               </div>
 
               {t('aboutSection.learnMoreButton')}
-            </button>
+            </Link>
           </div>
 
         </div>

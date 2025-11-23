@@ -11,8 +11,8 @@ function Header() {
   const navItems = [
     { key: 'home', href: '#hero-section' },
     { key: 'about', href: '#about' },
-    { key: 'projects', href: '#projects' },
     { key: 'services', href: '#service' },
+    { key: 'projects', href: '#projects' },
   ];
 
   return (

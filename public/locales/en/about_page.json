@@ -1,0 +1,129 @@
+{
+  "page": {
+    "indicator": "About Us",
+    "tagline": "Building Dreams. Developing Lands. Redefining Spaces.",
+    "mainTitle": "YAJURVEDA CONSTRUCTION",
+    "introParagraph": "Yajurveda Construction is built on the philosophy of harmonizing ancient wisdom with modern engineering. We deliver durable and thoughtfully designed spaces rooted in trust, precision, and innovation.",
+    "midTitle": "Crafted with care, Delivered with precision.",
+    "careerTitle": "Career / Work Opportunities in the Redevelopment Sector",
+    "labels": {
+      "role": "Role:",
+      "workAreas": "Key Work Areas:",
+      "qualification": "Required Qualification:"
+    }
+  },
+  "coreValues": [
+    {
+      "title": "Trust",
+      "description": "We build enduring relationships through transparency, honesty, and unwavering ethical standards in every transaction."
+    },
+    {
+      "title": "Precision",
+      "description": "Our engineering and execution maintain the highest accuracy, ensuring durability and structural excellence in every inch of the project."
+    },
+    {
+      "title": "Innovation",
+      "description": "We integrate modern, sustainable technologies and smart design solutions to create future-ready and efficient spaces."
+    },
+    {
+      "title": "Craftsmanship",
+      "description": "A dedication to superior quality materials and meticulous finishing ensures every space we deliver is built to last and inspire."
+    }
+  ],
+  "expertise": [
+    {
+      "category": "Expert Consultancy and Services",
+      "roles": [
+        {
+          "title": "Project Management Consultant (PMC)",
+          "role": "Act as the technical manager for the redevelopment project for the housing society.",
+          "work": [
+            "Prepare the Feasibility Report.",
+            "Handle the process of selecting developers/contractors (Tendering).",
+            "Monitor the construction quality and project timeline."
+          ],
+          "qualification": "Background in Engineering or Architecture."
+        },
+        {
+          "title": "Legal Consultant / Advocate",
+          "role": "Draft legal documents (especially the Development Agreement) between the society and the developer and resolve disputes.",
+          "work": [
+            "Provide legal advice to the society.",
+            "Verify land title documents.",
+            "Assist with MahaRERA and other government approvals."
+          ],
+          "qualification": "Expertise in Real Estate & RERA Law."
+        },
+        {
+          "title": "Architect and Town Planner",
+          "role": "Design the new building layout and plan according to government norms (such as FSI, margins, and height regulations).",
+          "work": [
+            "Create designs and layouts for the new flats.",
+            "Submit plans to the local municipal corporation (e.g., NMC).",
+            "Prepare master planning for cluster redevelopment."
+          ],
+          "qualification": "N/A"
+        },
+        {
+          "title": "Chartered Accountant (CA) / Finance Expert",
+          "role": "Manage finance and tax planning in Self-Redevelopment or Joint-Venture models.",
+          "work": [
+            "Manage accounts of corpus fund and profit from saleable flats.",
+            "Handle planning for GST and Income Tax.",
+            "Assist in obtaining loans from banks (Self-Redevelopment Loan)."
+          ],
+          "qualification": "N/A"
+        }
+      ]
+    },
+    {
+      "category": "Construction and Supply",
+      "roles": [
+        {
+          "title": "Contractor / Builder",
+          "role": "Manage construction work including everything from site preparation to finishing.",
+          "work": [
+            "Demolition of existing structure.",
+            "Structural construction and finishing work.",
+            "Manage workers and site operations."
+          ],
+          "qualification": "N/A"
+        },
+        {
+          "title": "Material Supplier",
+          "role": "Supply necessary construction materials (cement, steel, bricks, tiles, plumbing fixtures, etc.).",
+          "work": [
+            "Contract bulk supply with large construction companies.",
+            "Deliver high-quality materials to the site on time."
+          ],
+          "qualification": "N/A"
+        }
+      ]
+    },
+    {
+      "category": "Real Estate and Marketing",
+      "roles": [
+        {
+          "title": "Sales and Brokerage",
+          "role": "Sell the developer’s saleable units in the market.",
+          "work": [
+            "Manage project marketing and advertising.",
+            "Show flats to potential buyers and close sales.",
+            "Identify land and societies for upcoming redevelopment projects."
+          ],
+          "qualification": "N/A"
+        },
+        {
+          "title": "Developer",
+          "role": "Take financial risk, invest in the project, and earn profit.",
+          "work": [
+            "Sign agreements with the society.",
+            "Obtain government permissions and arrange finance.",
+            "Complete the project on time and sell."
+          ],
+          "qualification": "N/A"
+        }
+      ]
+    }
+  ]
+}

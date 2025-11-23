@@ -9,8 +9,11 @@ i18n
     lng: 'en',
     fallbackLng: 'en',
     
-    ns: ['common', 'home-hero', 'about', 'projects', 'feedback', 'contact'], 
+    ns: ['common', 'home-hero', 'about', 'projects', 'feedback', 'contact', 'about_page'], 
     defaultNS: 'common', 
+
+    // Preload the most critical namespaces to avoid initial loading flicker
+    preload: ['common', 'hero'],
 
     interpolation: {
       escapeValue: false, 

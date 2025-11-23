@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import HomePage from './pages/HomePage'
 import PopupForm from "./components/Form/PopupForm";
+import AboutPage from './pages/AboutPage'
+import { BrowserRouter, Route, Routes } from 'react-router';
 
 const App = () => {
 
@@ -18,9 +20,9 @@ const App = () => {
       // Some browsers (e.g., Safari in private mode) or security policies 
       // block localStorage access, throwing a SecurityError.
       const storage = window.localStorage;
-      
+
       const filled = storage.getItem("formFilled");
-      
+
       // 3. STRICT CHECK: Compare against the exact string value
       if (filled === "1") {
         setShowModal(false);
@@ -42,14 +44,19 @@ const App = () => {
   return (
     <>
       <div className='overflow-x-hidden'>
-        {/* Main content always renders behind modal */}
-        <main>
-          <HomePage />
-          {/* other main site components */}
-        </main>
 
-        {/* Modal renders on top */}
+        {/* 2. Define the Routes container */}
+        <Routes>
+          {/* Route for the Home Page (Path: /) */}
+          <Route path="/" element={<HomePage />} />
+
+          {/* Route for the About Page (Path: /about) */}
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+
+        {/* 3. Modal Renders (Outside the Routes, so it persists across pages) */}
         {showModal && <PopupForm onClose={handleClose} />}
+
       </div>
     </>
   )
