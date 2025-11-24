@@ -8,7 +8,7 @@ import { Link } from "react-router";
 
 const AboutUsAndServices = () => {
   const { t } = useTranslation('about');
-  
+
   // Retrieve translated services array
   const translatedServices = t('servicesSection.cards', { returnObjects: true });
 
@@ -19,7 +19,7 @@ const AboutUsAndServices = () => {
     ...service,
     image: staticImages[index],
   }));
-  
+
   const linkItems = t('aboutSection.listItems', { returnObjects: true });
 
   return (
@@ -50,12 +50,12 @@ const AboutUsAndServices = () => {
 
             <p className="mt-4 text-base sm:text-lg max-w-3xl font-[PoppinsRegular] text-[#253672]">
               {t('aboutSection.paragraph2_intro')}
-              <ol>
-                {Object.values(linkItems).map((item, index) => (
-                    <li key={index}> &bull; {item}</li>
-                ))}
-              </ol>
             </p>
+            <ol className="list-disc ml-6 text-base sm:text-lg max-w-3xl font-[PoppinsRegular] text-[#253672]">
+              {Object.values(linkItems).map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ol>
             <p className="mt-4 text-base sm:text-lg max-w-3xl font-[PoppinsRegular] text-[#253672]">
               {t('aboutSection.paragraph3')}
             </p>

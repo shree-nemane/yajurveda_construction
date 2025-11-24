@@ -3,8 +3,19 @@ import HomePage from './pages/HomePage'
 import PopupForm from "./components/Form/PopupForm";
 import AboutPage from './pages/AboutPage'
 import { BrowserRouter, Route, Routes } from 'react-router';
+import ScrollHandler from './ScrollHandler';
 
 const App = () => {
+
+  useEffect(() => {
+  if (window.location.hash) {
+    const id = window.location.hash.replace('#', '');
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }, 0);
+  }
+}, []);
+
 
   const [showModal, setShowModal] = useState(true);
 
@@ -43,6 +54,7 @@ const App = () => {
 
   return (
     <>
+      <ScrollHandler />
       <div className='overflow-x-hidden'>
 
         {/* 2. Define the Routes container */}

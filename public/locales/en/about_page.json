@@ -1,5 +1,5 @@
 {
-  "page": {
+  "about_page": {
     "indicator": "About Us",
     "tagline": "Building Dreams. Developing Lands. Redefining Spaces.",
     "mainTitle": "YAJURVEDA CONSTRUCTION",
@@ -10,7 +10,15 @@
       "role": "Role:",
       "workAreas": "Key Work Areas:",
       "qualification": "Required Qualification:"
+    },
+
+    "visionMission": {
+      "visionTitle": "Vision",
+      "vision": "We began in 2026 as a small development Company Group Invest Property marketing. Before long, we were receiving investor development projects companies that wanted to provide our tools to their clients. focused our attention on Profit For our Investor development All Group ever.",
+      "missionTitle": "Mission",
+      "mission": "To act as a bridge for asset capital between companies and investors with attractive risk-reward rations and ease of transaction."
     }
+    
   },
   "coreValues": [
     {
