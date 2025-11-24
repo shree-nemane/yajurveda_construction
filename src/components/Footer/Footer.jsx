@@ -82,7 +82,7 @@ const Footer = () => {
                             <a
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                href="#" className="flex justify-center items-center cursor-pointer 
+                                href="https://wa.me/919327234012"  className="flex justify-center items-center cursor-pointer 
                             transition-transform duration-300 hover:-translate-y-1">
                                 <img className="w-8 object-contain" src={whatsappIcon} alt="WhatsApp" />
                             </a>
