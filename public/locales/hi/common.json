@@ -7,8 +7,7 @@
   { "label": "होम", "path": "/" },
   { "label": "हमारे बारे में", "path": "/about" },
   { "label": "सेवाएँ", "path": "/#services" },
-  { "label": "प्रोजेक्ट्स", "path": "/#projects" },
-  { "label": "प्रशंसापत्र", "path": "/#testimonials" },
+  { "label": "हमारी कंपनी", "path": "/ourcompany" },
   { "label": "संपर्क करें", "path": "/#contact" }
   ],
     "servicesHeading": "सेवाएं",
@@ -35,8 +34,9 @@
     "nav": {
       "home": "होम",
       "about": "हमारे बारे में",
-      "projects": "परियोजनाएं",
       "services": "सेवाएं",
+      "ourCompany": "हमारी कंपनी",
+      "projects": "परियोजनाएं",
       "contact": "हमसे संपर्क करें"
     },
     "button": "संपर्क करें"

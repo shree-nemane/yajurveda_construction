@@ -23,12 +23,8 @@ const Footer = () => {
     const colorMap = {
         // Home page background color (Example: Dark Blue from Hero)
         '/': 'white',
-
-        // About page background color (Example: Lighter Blue/Gray)
         '/about': '#f0f2f5',
-
         '/ourcompany': '#f0f2f5',
-
     };
 
     // 3. Determine the final background color

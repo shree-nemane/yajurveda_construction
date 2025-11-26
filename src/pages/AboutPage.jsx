@@ -103,7 +103,7 @@ const AboutUs = () => {
                     {howToWork.map((item, index) => (
                         <div
                             key={index}
-                            className="p-6 rounded-2xl shadow-lg text-center border border-white/20 hover:scale-105 transition-transform"
+                            className="p-6 rounded-2xl shadow-lg text-left border border-white/20 hover:scale-105 transition-transform"
                             style={{ backgroundColor: primaryBlue }}
                         >
                             <h3 className="text-xl sm:text-2xl font-[PoppinsRegular] mb-4 text-white">{item.title}</h3>

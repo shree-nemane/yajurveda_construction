@@ -7,7 +7,7 @@
   { "label": "मुख्यपृष्ठ", "path": "/" },
   { "label": "आमच्याविषयी", "path": "/about" },
   { "label": "सेवा", "path": "/#services" },
-  { "label": "प्रकल्प", "path": "/#projects" },
+  { "label": "आमची कंपनी", "path": "/ourcompany" },
   { "label": "प्रशंसापत्रे", "path": "/#testimonials" },
   { "label": "आमच्याशी संपर्क करा", "path": "/#contact" }
   ],
@@ -35,8 +35,9 @@
     "nav": {
       "home": "मुख्यपृष्ठ",
       "about": "आमच्याबद्दल",
-      "projects": "प्रकल्प",
       "services": "सेवा",
+      "ourCompany": "आमची कंपनी",
+      "projects": "प्रकल्प",
       "contact": "आम्हाला संपर्क साधा"
     },
     "button": "संपर्क साधा"

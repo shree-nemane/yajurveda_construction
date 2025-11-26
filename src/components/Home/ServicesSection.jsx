@@ -25,7 +25,7 @@ export default function ServicesSection({ services, t }) {
     modules={[Navigation, Pagination, Autoplay]}
     spaceBetween={30}
     loop
-    autoplay={{ delay: 3000 }}
+    autoplay={{ delay: 5000 }}
     pagination={{ clickable: true }}
     navigation={{
       nextEl: ".swiper-next-btn",

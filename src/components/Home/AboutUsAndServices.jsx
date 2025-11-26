@@ -4,6 +4,8 @@ import backgroundImage from "../../assets/Home/About/About_bg.jpg";
 import realEstateImage from "../../assets/Home/About/real_estate.jpg";
 import litigationImage from "../../assets/Home/About/litigation.jpg";
 import constructionImage from "../../assets/Home/About/construction.jpg";
+import financialImage from "../../assets/Home/About/Financial.jpg";
+
 import { Link } from "react-router";
 import ServicesSection from "./ServicesSection";
 
@@ -13,7 +15,7 @@ const AboutUsAndServices = () => {
   // Retrieve translated services array
   const translatedServices = t('servicesSection.cards', { returnObjects: true });
 
-  const staticImages = [realEstateImage, litigationImage, constructionImage, constructionImage];
+  const staticImages = [financialImage, litigationImage, constructionImage, realEstateImage];
 
   // Combine translated text with static image paths
   const services = translatedServices.map((service, index) => ({
