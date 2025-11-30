@@ -154,7 +154,8 @@ const ContactForm = () => {
           )}
 
           {/* FORM START */}
-          <form
+          <form 
+            autoComplete="on"
             onSubmit={handleSubmit}
             className="grid grid-cols-1 md:grid-cols-2 gap-12"
           >

@@ -16,6 +16,9 @@ const AboutUs = () => {
     const expertiseRoles = t("expertise", { returnObjects: true });
     const labels = t("about_page.labels", { returnObjects: true });
 
+    // *** NEW — Replacing hardcoded values with translation
+    const companySection = t("companySection", { returnObjects: true });
+
     return (
         <div
             className="min-h-screen w-full relative bg-cover bg-center bg-no-repeat"
@@ -26,14 +29,6 @@ const AboutUs = () => {
 
             {/* HEADER */}
             <Header />
-
-            {/* NEW STRUCTURE: Position the LanguageSwitcher absolutely 
-            so it doesn't interfere with the Header's centering logic. 
-            It must have a high z-index to ensure it's clickable over the header's content.
-            */}
-            {/* <div className="absolute top-0 right-0 z-50 p-4 sm:p-6 mt-3">
-                <LanguageSwitcher />
-            </div> */}
 
             {/* MAIN CONTENT */}
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 pt-21">
@@ -56,39 +51,7 @@ const AboutUs = () => {
                     </p>
                 </div>
 
-                {/* --- VISION & MISSION SECTION START --- */}
-                {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-
-                    
-                    <div className="p-8 rounded-2xl shadow-xl transition-all hover:shadow-2xl border border-black/10">
-                        <h2
-                            className="text-3xl font-[PoppinsSbold] mb-4 border-b-2 pb-2"
-                            style={{ borderColor: primaryBlue, color: primaryBlue }}
-                        >
-                            {t("about_page.visionMission.visionTitle")}
-                        </h2>
-                        <p className="text-base font-[PoppinsRegular] leading-relaxed opacity-90"
-                            style={{ color: primaryBlue }}>
-                            {t("about_page.visionMission.vision")}
-                        </p>
-                    </div>
-
-                   
-                    <div className="p-8 rounded-2xl shadow-xl transition-all hover:shadow-2xl border border-black/10">
-                        <h2
-                            className="text-3xl font-[PoppinsSbold] mb-4 border-b-2 pb-2"
-                            style={{ borderColor: primaryBlue, color: primaryBlue }}
-                        >
-                            {t("about_page.visionMission.missionTitle")}
-                        </h2>
-                        <p className="text-base font-[PoppinsRegular] leading-relaxed opacity-90"
-                            style={{ color: primaryBlue }}>
-                            {t("about_page.visionMission.mission")}
-                        </p>
-                    </div>
-                </div> */}
-                {/* --- VISION & MISSION SECTION END --- */}
-
+                {/* How we work */}
                 <hr className="w-2/3 mx-auto border-black/20 mb-20" />
 
                 <h2
@@ -111,6 +74,38 @@ const AboutUs = () => {
                         </div>
                     ))}
                 </div>
+
+                {/* --- UPDATED SECTION: IMAGE CONTENT START --- */}
+                <hr className="w-2/3 mx-auto border-black/20 mb-20" />
+
+                <div className="text-center mb-20">
+                    <h2 
+                        className="font-[PoppinsSbold] mb-8 leading-tight"
+                        style={{ fontSize: "clamp(2rem, 5vw, 4rem)", color: primaryBlue }}
+                    >
+                        {companySection.title}
+                    </h2>
+                    
+                    <div className="mb-8">
+                        {companySection.names.map((name, index) => (
+                            <p 
+                                key={index} 
+                                className="text-xl sm:text-3xl font-[PoppinsRegular] leading-snug"
+                                style={{ color: primaryBlue }}
+                            >
+                                {name}
+                            </p>
+                        ))}
+                    </div>
+
+                    <p 
+                        className="text-sm sm:text-lg max-w-5xl mx-auto opacity-85 leading-relaxed font-[PoppinsRegular] pt-4"
+                        style={{ color: primaryBlue }}
+                    >
+                        {companySection.description}
+                    </p>
+                </div>
+                {/* --- NEW SECTION END --- */}
 
                 <hr className="w-2/3 mx-auto border-black/20 mb-20" />
 

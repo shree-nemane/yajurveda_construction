@@ -12,13 +12,13 @@ const OurCompanyPage = () => {
     <>
       <Header />
 
-      <div className="w-full bg-white font-sans pt-24 sm:pt-32 lg:pt-40 pb-16 sm:pb-24 px-4 sm:px-8 lg:px-16">
+      <div className="w-full bg-white font-sans pt-32 lg:pt-40 pb-16 sm:pb-24 px-4 sm:px-8 lg:px-16">
         <div className="max-w-6xl mx-auto text-center">
 
           {/* --- Project Title --- */}
           <div className="mb-10 sm:mb-14 border-b pb-6 sm:pb-10">
             <h2
-              className="text-3xl sm:text-4xl md:text-5xl font-[PoppinsSbold]"
+              className="text-4xl md:text-5xl font-[PoppinsSbold]"
               style={{ color: primaryBlue }}
             >
               {t("projectName")}

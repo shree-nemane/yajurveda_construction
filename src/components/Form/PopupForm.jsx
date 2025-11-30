@@ -139,7 +139,7 @@ export default function PopupForm({ onClose }) {
 
         {/* Removed the old status divs */}
         
-        <form className="space-y-4" onSubmit={handleSubmit} noValidate>
+        <form autoComplete="on" className="space-y-4" onSubmit={handleSubmit} noValidate>
           <div>
             <label className="text-gray-700 font-[PoppinsRegular] text-sm block mb-1">Full Name *</label>
             <input

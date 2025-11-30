@@ -5,7 +5,7 @@ import AboutPage from './pages/AboutPage'
 import OurCompanyPage from './pages/OurCompanyPage';
 import { BrowserRouter, Route, Routes } from 'react-router';
 import ScrollToTop from './ScrollToTop';
-import FinancialPlan from './pages/FinancialPlan';
+import FinancialPlanPage from './pages/FinancialPlanPage';
 
 const App = () => {
 
@@ -60,7 +60,7 @@ const App = () => {
           {/* Route for the Our Company Page (Path: /ourCompany) */}
           <Route path="/ourcompany" element={<OurCompanyPage />} />
 
-          <Route path="/financialplan" element={<FinancialPlan />} />
+          <Route path="/financialplan" element={<FinancialPlanPage />} />
 
 
         </Routes>

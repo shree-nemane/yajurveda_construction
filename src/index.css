@@ -30,10 +30,10 @@
     src: url(/fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
-@font-face {
+/* @font-face {
     font-family: PoppinsLight;
     src: url(fonts/Poppins/Poppins-Light.ttf);
-}
+} */
 
 @font-face {
     font-family: PoppinsItalic;

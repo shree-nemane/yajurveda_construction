@@ -32,15 +32,16 @@
     "madeWith": "Made with ❤️ by"
   },
   "header": {
-    "nav": {
-      "home": "Home",
-      "about": "About",
-      "services": "Services",
-      "ourCompany": "Our Company",
-      "financialplan": "Financial Plan",
-      "projects": "Projects",
-      "contact": "Contact Us"
-    },
-    "button": "Get In Touch"
+  "links": [
+    { "label": "Home", "path": "/" },
+    { "label": "About", "path": "/about" },
+    { "label": "Services", "path": "/#services" },
+    { "label": "Our Company", "path": "/ourcompany" },
+    { "label": "Financial Plan", "path": "/financialplan" }
+  ],
+  "button": {
+    "label": "Get In Touch",
+    "path": "/#contact"
   }
+}
 }

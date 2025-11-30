@@ -32,15 +32,16 @@
     "madeWith": "द्वारे ❤️ ने बनवले"
   },
   "header": {
-    "nav": {
-      "home": "मुख्यपृष्ठ",
-      "about": "आमच्याबद्दल",
-      "services": "सेवा",
-      "ourCompany": "आमची कंपनी",
-      "financialplan": "आर्थिक योजना",
-      "projects": "प्रकल्प",
-      "contact": "आम्हाला संपर्क साधा"
-    },
-    "button": "संपर्क साधा"
+  "links": [
+    { "label": "मुख्यपृष्ठ", "path": "/" },
+    { "label": "आमच्याबद्दल", "path": "/about" },
+    { "label": "सेवा", "path": "/#services" },
+    { "label": "आमची कंपनी", "path": "/ourcompany" },
+    { "label": "आर्थिक योजना", "path": "/financialplan" }
+  ],
+  "button": {
+    "label": "संपर्क साधा",
+    "path": "/#contact"
   }
+}
 }

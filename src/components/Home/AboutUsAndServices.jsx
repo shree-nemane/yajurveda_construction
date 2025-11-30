@@ -15,7 +15,7 @@ const AboutUsAndServices = () => {
   // Retrieve translated services array
   const translatedServices = t('servicesSection.cards', { returnObjects: true });
 
-  const staticImages = [financialImage, litigationImage, constructionImage, realEstateImage];
+  const staticImages = [financialImage, realEstateImage, constructionImage, litigationImage];
 
   // Combine translated text with static image paths
   const services = translatedServices.map((service, index) => ({

@@ -20,19 +20,19 @@
     "offerButton": "What We Offer",
     "cards": [
       {
-        "title": "All Types of Financial Service",
+        "title": "All Types of Financial Consultancy Service",
         "description": "Comprehensive financial services including loan acquisition, corpus fund management, tax planning (GST/Income Tax), and expert financial modeling for redevelopment projects."
       },
       {
-        "title": "Property Related Work and Documents",
+        "title": "Property Related Work and Documents Service",
         "description": "Handling all essential property documentation, title verification, legal compliance checks, and securing government approvals (e.g., MahaRERA) necessary for development and transfer."
       },
       {
-        "title": "All Types of Construction & Developers",
+        "title": "All Types of Construction & Redevelopers",
         "description": "End-to-end management of all construction activities, from demolition and structural work to final finishing, coordinating large projects with certified builders and material suppliers."
       },
       {
-        "title": "Property Litigation Matters Consultancy",
+        "title": "Property Litigation Matters Consultancy Service",
         "description": "Providing expert legal consultancy and representation to resolve property disputes, check legal status, draft development agreements, and ensure safe, reliable legal guidance."
       }
     ]

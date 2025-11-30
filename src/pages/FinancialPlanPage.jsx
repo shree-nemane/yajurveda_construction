@@ -11,7 +11,7 @@ import stabilityImg from "../assets/financial/stability.jpg";
 import financialHeaderImg from "../assets/financial/header.jpg";
 
 
-const FinancialPlan = () => {
+const FinancialPlanPage = () => {
     // Use the dedicated 'financial_plan' namespace
     const { t } = useTranslation('financial_plan');
 
@@ -34,7 +34,7 @@ const FinancialPlan = () => {
                 <div className="max-w-7xl mx-auto">
 
                     {/* --- TITLE --- */}
-                    <header className="text-center mb-16">
+                    <div className="text-center mb-16">
                         <h1
                             className="text-5xl sm:text-6xl md:text-7xl font-[PoppinsSbold] tracking-tight mb-2"
                         >
@@ -43,7 +43,7 @@ const FinancialPlan = () => {
                         <p className="text-xl sm:text-xl font-normal text-gray-600">
                             {t('subHeading')}
                         </p>
-                    </header>
+                    </div>
 
                     {/* --- SECTION 1: Benefits --- */}
                     <div className="mb-16">
@@ -129,4 +129,4 @@ const FinancialPlan = () => {
     );
 };
 
-export default FinancialPlan;
+export default FinancialPlanPage;
