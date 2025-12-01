@@ -79,17 +79,17 @@ const AboutUs = () => {
                 <hr className="w-2/3 mx-auto border-black/20 mb-20" />
 
                 <div className="text-center mb-20">
-                    <h2 
+                    <h2
                         className="font-[PoppinsSbold] mb-8 leading-tight"
                         style={{ fontSize: "clamp(2rem, 5vw, 4rem)", color: primaryBlue }}
                     >
                         {companySection.title}
                     </h2>
-                    
+
                     <div className="mb-8">
                         {companySection.names.map((name, index) => (
-                            <p 
-                                key={index} 
+                            <p
+                                key={index}
                                 className="text-xl sm:text-3xl font-[PoppinsRegular] leading-snug"
                                 style={{ color: primaryBlue }}
                             >
@@ -98,7 +98,7 @@ const AboutUs = () => {
                         ))}
                     </div>
 
-                    <p 
+                    <p
                         className="text-sm sm:text-lg max-w-5xl mx-auto opacity-85 leading-relaxed font-[PoppinsRegular] pt-4"
                         style={{ color: primaryBlue }}
                     >
@@ -109,15 +109,15 @@ const AboutUs = () => {
 
                 <hr className="w-2/3 mx-auto border-black/20 mb-20" />
 
-                <h2
+                {/* <h2
                     className="text-center mb-14 font-[PoppinsSbold]"
                     style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", color: primaryBlue }}
                 >
                     {t("about_page.careerTitle")}
-                </h2>
+                </h2> */}
 
                 {/* EXPERTISE SECTIONS */}
-                {expertiseRoles.map((section, index) => (
+                {/* {expertiseRoles.map((section, index) => (
                     <div key={index} className="pb-16">
                         <h3
                             className="text-xl sm:text-3xl mb-6 border-l-4 pl-4 font-[PoppinsRegular]"
@@ -158,7 +158,7 @@ const AboutUs = () => {
                             ))}
                         </div>
                     </div>
-                ))}
+                ))} */}
             </div>
 
             <Footer />

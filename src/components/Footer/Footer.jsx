@@ -103,7 +103,7 @@ const Footer = () => {
                             <a
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                href="https://wa.me/919327234012" className="flex justify-center items-center cursor-pointer 
+                                href="https://wa.me/919737073390" className="flex justify-center items-center cursor-pointer 
                             transition-transform duration-300 hover:-translate-y-1">
                                 <img className="w-8 object-contain" src={whatsappIcon} alt="WhatsApp" />
                             </a>
@@ -111,7 +111,7 @@ const Footer = () => {
                             <a
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                href="mailto:contact@yajurved" className="flex justify-center items-center cursor-pointer 
+                                href="mailto:help.yajurved@gmail.com" className="flex justify-center items-center cursor-pointer 
                             transition-transform duration-300 hover:-translate-y-1">
                                 <img className="w-9 object-contain" src={gmailIcon} alt="Gmail" />
                             </a>

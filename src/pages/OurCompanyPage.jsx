@@ -24,14 +24,14 @@ const OurCompanyPage = () => {
               {t("projectName")}
             </h2>
 
-            <p className="text-sm sm:text-base md:text-lg font-[PoppinsLight] opacity-70">
+            <p className="text-sm sm:text-base md:text-lg font-[PoppinsSbold] opacity-70">
               {t("focusLabel")} {t("projectFocus")}
             </p>
           </div>
 
           {/* --- Mission & Vision --- */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 mb-16 text-left">
-            
+
             <div
               className="p-4 sm:p-6 border-l-4 font-[PoppinsRegular]"
               style={{ borderColor: "#4666D8" }}
